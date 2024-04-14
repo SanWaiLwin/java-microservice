@@ -1,0 +1,25 @@
+package com.swl.accounts.repository;
+
+import com.swl.accounts.entity.Accounts;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Modifying;
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.Optional;
+
+/**
+ * @version 1.0.0
+ * @description
+ * @author: SanWaiLwin
+ * @date: 4/13/2024 3:04 PM
+ */
+@Repository
+public interface AccountsRepository extends JpaRepository<Accounts, Long > {
+
+    Optional<Accounts> findByCustomerId(Long customerId);
+
+    @Transactional
+    @Modifying
+    void deleteByCustomerId(Long customerId);
+}
