@@ -25,6 +25,7 @@ import org.springframework.web.bind.annotation.*;
  * @description
  * @author: SanWaiLwin
  * @date: 4/14/2024 11:26 AM
+ * s4 completed
  */
 @Tag(
         name = "CRUD REST APIs for Cards in EazyBank",
