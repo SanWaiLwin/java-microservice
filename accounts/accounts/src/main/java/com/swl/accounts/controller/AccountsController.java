@@ -169,7 +169,7 @@ public class AccountsController {
                     )
             )
     })
-    @GetMapping("/build-info")
+    @GetMapping("/build-infos")
     public ResponseEntity<String> getBuildInfo(){
         return ResponseEntity
                 .status(HttpStatus.OK)

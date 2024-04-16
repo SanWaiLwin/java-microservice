@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/Java MicroService.iml" filepath="$PROJECT_DIR$/.idea/Java MicroService.iml" />
       <module fileurl="file://$PROJECT_DIR$/accounts/accounts/accounts.iml" filepath="$PROJECT_DIR$/accounts/accounts/accounts.iml" />
       <module fileurl="file://$PROJECT_DIR$/cards/cards/cards.iml" filepath="$PROJECT_DIR$/cards/cards/cards.iml" />
+      <module fileurl="file://$PROJECT_DIR$/configserver/configserver/configserver.iml" filepath="$PROJECT_DIR$/configserver/configserver/configserver.iml" />
       <module fileurl="file://$PROJECT_DIR$/loans/loans/loans.iml" filepath="$PROJECT_DIR$/loans/loans/loans.iml" />
     </modules>
   </component>
