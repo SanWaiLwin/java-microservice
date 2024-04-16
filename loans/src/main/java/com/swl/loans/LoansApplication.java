@@ -12,9 +12,9 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 @SpringBootApplication
-/*@ComponentScans({ @ComponentScan("com.eazybytes.loans.controller") })
-@EnableJpaRepositories("com.eazybytes.loans.repository")
-@EntityScan("com.eazybytes.loans.model")*/
+/*@ComponentScans({ @ComponentScan("com.swlbytes.loans.controller") })
+@EnableJpaRepositories("com.swlbytes.loans.repository")
+@EntityScan("com.swlbytes.loans.model")*/
 @EnableJpaAuditing(auditorAwareRef = "auditAwareImpl")
 @EnableConfigurationProperties(value={LoansContactInfoDto.class})
 @OpenAPIDefinition(
@@ -24,17 +24,17 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 				version = "v1",
 				contact = @Contact(
 						name = "Madan Reddy",
-						email = "tutor@eazybytes.com",
-						url = "https://www.eazybytes.com"
+						email = "tutor@swlbytes.com",
+						url = "https://www.swlbytes.com"
 				),
 				license = @License(
 						name = "Apache 2.0",
-						url = "https://www.eazybytes.com"
+						url = "https://www.swlbytes.com"
 				)
 		),
 		externalDocs = @ExternalDocumentation(
 				description = "SWL Bank Loans microservice REST API Documentation",
-				url = "https://www.eazybytes.com/swagger-ui.html"
+				url = "https://www.swlbytes.com/swagger-ui.html"
 		)
 )
 public class LoansApplication {

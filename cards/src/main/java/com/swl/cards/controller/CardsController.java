@@ -31,8 +31,8 @@ import org.springframework.web.bind.annotation.*;
  * @date: 4/14/2024 11:26 AM
  */
 @Tag(
-        name = "CRUD REST APIs for Cards in EazyBank",
-        description = "CRUD REST APIs in EazyBank to CREATE, UPDATE, FETCH AND DELETE card details"
+        name = "CRUD REST APIs for Cards in swlBank",
+        description = "CRUD REST APIs in swlBank to CREATE, UPDATE, FETCH AND DELETE card details"
 )
 @RestController
 @RequestMapping(path = "/api", produces = {MediaType.APPLICATION_JSON_VALUE})

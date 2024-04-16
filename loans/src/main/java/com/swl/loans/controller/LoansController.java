@@ -30,8 +30,8 @@ import org.springframework.web.bind.annotation.*;
  * @date: 4/14/2024 12:15 PM
  */
 @Tag(
-        name = "CRUD REST APIs for Loans in EazyBank",
-        description = "CRUD REST APIs in EazyBank to CREATE, UPDATE, FETCH AND DELETE loan details"
+        name = "CRUD REST APIs for Loans in swlBank",
+        description = "CRUD REST APIs in swlBank to CREATE, UPDATE, FETCH AND DELETE loan details"
 )
 @RestController
 @RequestMapping(path = "/api", produces = {MediaType.APPLICATION_JSON_VALUE})
@@ -55,7 +55,7 @@ public class LoansController {
 
     @Operation(
             summary = "Create Loan REST API",
-            description = "REST API to create new loan inside EazyBank"
+            description = "REST API to create new loan inside swlBank"
     )
     @ApiResponses({
             @ApiResponse(
