@@ -39,6 +39,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping(path = "/api", produces = {MediaType.APPLICATION_JSON_VALUE})
 @Validated
 public class LoansController {
+
     private final ILoansService iLoansService;
 
     @Autowired
@@ -255,8 +256,11 @@ public class LoansController {
     )
     @GetMapping("/contact-info")
     public ResponseEntity<LoansContactInfoDto> getContactInfo() {
-        return ResponseEntity
-                .status(HttpStatus.OK)
-                .body(loansContactInfoDto);
+        logger.debug("Invoked Loans contact-infi API.");
+        throw new RuntimeException();
+
+//        return ResponseEntity
+//                .status(HttpStatus.OK)
+//                .body(loansContactInfoDto);
     }
 }

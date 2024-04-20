@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @author: SanWaiLwin
  * @date: 4/18/2024 2:46 PM
  */
-@FeignClient("loans")
+@FeignClient(name= "loans", fallback = LoansFallback.class)
 public interface LoansFeignClient {
 
     @GetMapping(value = "/api/fetch",consumes = "application/json")
